@@ -4,7 +4,9 @@
   "description": "collection of peoduct with affordable prices",
   "main": "backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/ADDY69O/MERN---ECOMMERCE---WEBSITE/issues"
   },
-  "homepage": "https://github.com/ADDY69O/MERN---ECOMMERCE---WEBSITE#readme"
+  "homepage": "https://github.com/ADDY69O/MERN---ECOMMERCE---WEBSITE#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.1"
+  }
 }
