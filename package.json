@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce-app",
+  "version": "1.0.0",
+  "description": "collection of peoduct with affordable prices",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADDY69O/MERN---ECOMMERCE---WEBSITE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ADDY69O/MERN---ECOMMERCE---WEBSITE/issues"
+  },
+  "homepage": "https://github.com/ADDY69O/MERN---ECOMMERCE---WEBSITE#readme"
+}
