@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ADDY69O/MERN---ECOMMERCE---WEBSITE.git"
+    "url": "git+https://github.com/ADDY69O/mern-ecommerce.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ADDY69O/MERN---ECOMMERCE---WEBSITE/issues"
+    "url": "https://github.com/ADDY69O/mern-ecommerce/issues"
   },
-  "homepage": "https://github.com/ADDY69O/MERN---ECOMMERCE---WEBSITE#readme",
+  "homepage": "https://github.com/ADDY69O/mern-ecommerce#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

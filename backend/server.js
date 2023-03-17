@@ -1,4 +1,13 @@
 const app =require('../backend/app');
+const dotenv=require('dotenv');
+const connectDatabase=require('../backend/connection/db');
+
+//config
+dotenv.config({path:"./config.env"});
+
+
+// Connecting to database
+connectDatabase()
 
 
 
@@ -6,8 +15,6 @@ const app =require('../backend/app');
 
 
 
-const PORT=process.env.PORT;
-
-app.listen(PORT,(req,res)=>{
-    console.log(`Connected on port ${PORT}` );
+app.listen(process.env.PORT,(req,res)=>{
+    console.log(`Connected on http://localhost:${process.env.PORT}/` );
 })
