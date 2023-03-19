@@ -1,6 +1,8 @@
 const Product=require('../Models/ProductModel');
 const ErrorHandler = require('../utils/errorhandler');
 const catchAsyncError=require('../middleware/catchAsyncError');
+const Apifeatures = require('../utils/Apifeatures');
+
 
 
 const createProduct=catchAsyncError( async(req,res,next)=>{
@@ -52,8 +54,9 @@ const deleteProduct= catchAsyncError(async(req,res,next)=>{
 
 })
 
-
+  
 const searchProduct = catchAsyncError( async(req,res,next)=>{
+
 
    const products=await Product.findById(req.params.id);
    if(!products){
@@ -69,9 +72,13 @@ const searchProduct = catchAsyncError( async(req,res,next)=>{
 
 
 const   getAllProducts=catchAsyncError(async(req,res,next)=>{
-   const product =await Product.find({});
+    const productPerPage=5;
+    const productCount= await Product.countDocuments();
+    const apifeatures=new Apifeatures(Product,req.query).search().filter().pagination(productPerPage);
+
+   const product =await apifeatures.query;
    
-    res.status(200).json({message:"All products are here",product})
+    res.status(200).json({message:"All products are here",product,productCount})
 })
 
 
